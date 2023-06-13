@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/list">
+
+
+    <TextView
+        android:id="@+id/stateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:textAlignment="center"
+        android:text="TAMILNADU"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/districtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="THIRUVARUR"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/stateName"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/caseListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="290dp"
+        app:cardElevation="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50dp">
+
+            <TextView
+                android:id="@+id/covidStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="COVID STATUS"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/activeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirmedText"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_alignParentStart="true"
+                android:text="ACTIVE"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/confirmedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/covidStatusText"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="CONFIRMED"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/recoveredText"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/activeText"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="30dp"
+                android:text="RECOVERED"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/decreasedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/recoveredText"
+                android:layout_alignParentStart="true"
+                android:text="DECEASED"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/confirmedCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/covidStatusText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/poppinsbolditalic"
+                android:layout_marginEnd="30dp"
+                android:text="1234"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/activeCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmedText"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppinsbolditalic"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                android:text="1234"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/recoveredCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activeText"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppinsbolditalic"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                android:text="1234"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/decreasedCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppinsbolditalic"
+                android:layout_below="@+id/recoveredText"
+                android:text="1234"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
